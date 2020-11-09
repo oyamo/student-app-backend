@@ -1,4 +1,5 @@
 const mongoose= require('mongoose')
+const uri = "mongodb+srv://Oyasis:brianoti1@pollcluster.mm0jl.mongodb.net/StudentApp?retryWrites=true&w=majority"
 const connect = () =>{
     const options = {
         ssl: false,
@@ -7,7 +8,7 @@ const connect = () =>{
         socketTimeoutMS: 5000
     };
 
-    mongoose.connect(process.env.MONGO_URI,{
+    mongoose.connect(uri,{
         useNewUrlParser:true,
         useUnifiedTopology: true,
         serverSelectionTimeoutMS: 5000
@@ -24,7 +25,7 @@ const connect = () =>{
     });
 
     db.on('connect', ()=>{
-        console.info("Connected to " + process.env.MONGO_URI )
+        console.info("Connected to " + uri )
     });
 
     console.log(db.eventNames())
