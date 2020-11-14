@@ -13,4 +13,19 @@ router.get('/student', async function(req, res, next) {
   res.json(student)
 });
 
+router.get('/student/details', async (req, res) => {
+
+  const emailAddress = req.query.studentEmail;
+
+  const filter = {emailAddress};
+  const student = await Student.findOne(filter).exec();
+
+  if(student == null ){
+    res.status(404)
+  }
+
+  res.json({student})
+
+})
+
 module.exports = router;
