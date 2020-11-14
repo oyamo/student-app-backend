@@ -9,7 +9,7 @@ require('./util/connect.util')
 const indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const initRouter = require('./routes/initialisedatabase')
-const apiRegRouter = require('./routes/apiinit')
+const apiRegRouter = require('./routes/api_index')
 const app = express();
 
 // view engine setup
