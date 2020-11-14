@@ -26,6 +26,22 @@ router.get('/student/details', async (req, res) => {
 
   res.json({student})
 
-})
+});
+
+router.get('/staff/details', async (req, res) => {
+
+  const staffEmail = req.query.staffEmail;
+
+  const filter = {staffEmail};
+  const staff = await Staff.findOne(filter).exec();
+
+  if(staff == null ){
+    res.status(404)
+  }
+
+  res.json({staff})
+
+});
+
 
 module.exports = router;
