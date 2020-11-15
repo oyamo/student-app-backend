@@ -24,7 +24,7 @@ router.get('/student/details', async (req, res) => {
     res.status(404)
   }
 
-  res.json({student})
+  res.json(student)
 
 });
 
@@ -39,7 +39,7 @@ router.get('/staff/details', async (req, res) => {
     res.status(404)
   }
 
-  res.json({staff})
+  res.json(staff)
 
 });
 
