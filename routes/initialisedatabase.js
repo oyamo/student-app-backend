@@ -8,9 +8,9 @@ router.get('/', async (req, res)=> {
         {staffId: 12, staffName: "Julian Omore", staffEmail: "julian@gmail.com", staffType: "CANTEEN"},
         {staffId: 13, staffName: "Peter James", staffEmail: "peterjames@gmail.com", staffType: "TAMAM"},
         {staffId: 14, staffName: "Jane Musyoka", staffEmail: "janemusyoka@gmail.com", staffType: "TEACHER"},
-        {staffId: 15, staffName: "Patrick Mohammed", staffEmail: "ahmed@uaeu.ac.eu", staffType: "TEACHER"},
-        {staffId: 16, staffName: "Ahmed Nora", staffEmail: "nora@uaeu.ac.eu", staffType: "CANTEEN"},
-        {staffId: 17, staffName: "Akram Nuel", staffEmail: "akram@uaeu.ac.eu", staffType: "TAMAM"},
+        {staffId: 15, staffName: "Patrick Mohammed", staffEmail: "ahmed@uaeu.ac.ae", staffType: "TEACHER"},
+        {staffId: 16, staffName: "Ahmed Nora", staffEmail: "nora@uaeu.ac.ae", staffType: "CANTEEN"},
+        {staffId: 17, staffName: "Akram Nuel", staffEmail: "akram@uaeu.ac.ae", staffType: "TAMAM"},
     ];
 
     const students = [
@@ -20,8 +20,8 @@ router.get('/', async (req, res)=> {
         {studentId: 103, studentName: "Mathew Green", hostelName: "red woods", studentBuilding: "Building D", studentPhoneNo: "+1 1083083044", emailAddress: "mathew@gmail.com", course: "ITE 50"},
         {studentId: 104, studentName: "Oyamo Brian", hostelName: "yellow woods", studentBuilding: "Building D", studentPhoneNo: "+254793875319", emailAddress: "oyamo.xyz@gmail.com", course: "Computer Science"},
         {studentId: 105, studentName: "Imagination Girl", hostelName: "purple woods", studentBuilding: "Building D", studentPhoneNo: "+254793875319", emailAddress: "imagination.girl88@gmail.com", course: "Computer Science"},
-        {studentId: 106, studentName: "Mohamed Ruel", hostelName: "purple woods", studentBuilding: "Building D", studentPhoneNo: "+254793875319", emailAddress: "20202020@uaeu.ac.eu", course: "Computer Science"},
-        {studentId: 107, studentName: "John Doe", hostelName: "purple woods", studentBuilding: "Building D", studentPhoneNo: "+254793875319", emailAddress: "20212021@uaeu.ac.eu", course: "Computer Science"},
+        {studentId: 106, studentName: "Mohamed Ruel", hostelName: "purple woods", studentBuilding: "Building D", studentPhoneNo: "+254793875319", emailAddress: "20202020@uaeu.ac.ae", course: "Computer Science"},
+        {studentId: 107, studentName: "John Doe", hostelName: "purple woods", studentBuilding: "Building D", studentPhoneNo: "+254793875319", emailAddress: "20212021@uaeu.ac.ae", course: "Computer Science"},
     ]
     await Student.deleteMany({})
     await Staff.deleteMany({})
